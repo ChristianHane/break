@@ -8,22 +8,37 @@
 }
 
 .sign-in {
+  height: 50px;
+  width: 100px;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 17px;
   color: lightgray;
-  margin-top: 15px;
+  padding-top: 18px;
+  text-align: center;
   margin-right: 4%;
   float: right;
 }
 
+.sign-in:hover {
+  background-color: gray;
+}
+
+.sign-in-background {
+  background-color: gray;  
+}
+
 .sign-in-menu {
-  height: 300px;
-  position: fixed;
+  font-size: 20px;
+  height: 448px;
+  position: relative;
   top: 52px;
   display: none;
   width: 400px;
   background-color: white;
   margin-left: -300px;
+  float: right;
+  margin-right: -100;
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.7);
 }
 
 body {font-family: Arial, Helvetica, sans-serif;}
@@ -43,8 +58,9 @@ body {font-family: Arial, Helvetica, sans-serif;}
   outline: none;
 }
 hr {
+  margin-top: 45px;
   border: 1px solid #f1f1f1;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 } 
 
 .clearfix > button {
@@ -87,3 +103,26 @@ hr {
     width: 100%;
   }
 } 
+
+#exit-sign-in {
+  cursor: pointer;
+  float: right;
+}
+
+#exit-sign-in:hover {
+  color: gray;
+}
+
+#login, #sign-up {
+  cursor: pointer;  
+  height: 35px;
+  text-align: center;
+  margin-left: 2%;
+  float: left;
+  width: 40%;
+  padding-top: 5px;
+}
+
+.sign-up-selecetor {
+  background-color: aqua;  
+}
