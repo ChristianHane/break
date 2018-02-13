@@ -1,6 +1,6 @@
 $('.sign-in').on('click', function(event) {
   event.stopPropagation();
-  $('.sign-in-menu').toggle('slow');
+  $('.sign-in-menu').slideToggle('medium');
   $('.sign-in').toggleClass('sign-in-background');  
 })
 

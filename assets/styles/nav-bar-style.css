@@ -1,4 +1,9 @@
-#nav-bar {
+* {box-sizing: border-box}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+  grid-auto-rows: minmax(50px, auto);
   position: fixed;
   top: 0;
   z-index: 10;
@@ -6,123 +11,150 @@
   height: 50px;
   width: 100%;
 }
-
-.sign-in {
-  height: 50px;
-  width: 100px;
-  cursor: pointer;
-  font-size: 17px;
-  color: lightgray;
-  padding-top: 18px;
-  text-align: center;
-  margin-right: 4%;
-  float: right;
-}
-
-.sign-in:hover {
-  background-color: gray;
-}
-
-.sign-in-background {
-  background-color: gray;  
-}
-
-.sign-in-menu {
-  font-size: 20px;
-  height: 448px;
-  position: relative;
-  top: 52px;
-  display: none;
-  width: 400px;
-  background-color: white;
-  margin-left: -300px;
-  float: right;
-  margin-right: -100;
-  box-shadow: 0px 0px 20px rgba(0,0,0,0.7);
-}
-
-body {font-family: Arial, Helvetica, sans-serif;}
-* {box-sizing: border-box}
-
-#sign-in-email, .sign-up-psw {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
-  border: none;
-  background: #f1f1f1;
-}
-
-#sign-in-email:focus, .sign-up-psw:focus {
-  background-color: #ddd;
-  outline: none;
-}
-hr {
-  margin-top: 45px;
-  border: 1px solid #f1f1f1;
-  margin-bottom: 15px;
-} 
-
-.clearfix > button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  opacity: 0.9;
-}
-
-.clearfix > button:hover {
-  opacity:1;
-}
-
-.cancelbtn {
-  padding: 14px 20px;
-  background-color: #f44336;
-}
-
-.cancelbtn, .signupbtn {
-  float: left;
-  width: 50%;
-}
-
-.sign-up-container {
-  padding: 16px;
-}
-
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-@media screen and (max-width: 300px) {
-  .cancelbtn, .signupbtn {
-    width: 100%;
+  .logo {
+    grid-column: 2 / 4;
+    grid-row: 1;
+    margin-top: 11px;
+    cursor: pointer;
+    position: relative;
+    font-size: 25px;
+    color: azure;
   }
-} 
 
-#exit-sign-in {
-  cursor: pointer;
-  float: right;
-}
+  .logo:hover {
+    color: gray;
+  }
 
-#exit-sign-in:hover {
-  color: gray;
-}
+  .about {
+    grid-column: 12;
+    grid-row: 1;
+    height: 50px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 17px;
+    color: lightgray;
+    padding-top: 16px;
+    text-align: center;
+    margin-right: 4%;
+    float: right;
+  }
 
-#login, #sign-up {
-  cursor: pointer;  
-  height: 35px;
-  text-align: center;
-  margin-left: 2%;
-  float: left;
-  width: 40%;
-  padding-top: 5px;
-}
+  .about:hover {
+    background-color: gray;
+  }
 
-.sign-up-selecetor {
-  background-color: aqua;  
-}
+  .sign-in {
+    grid-column: 13;
+    grid-row: 1;
+    height: 50px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 17px;
+    color: lightgray;
+    padding-top: 16px;
+    text-align: center;
+    margin-right: 4%;
+    float: right;
+  }
+
+  .sign-in:hover {
+    background-color: gray;
+  }
+
+  .sign-in-background {
+    background-color: gray;  
+  }
+
+  .sign-in-menu {
+    grid-column: 10 / 14;
+    grid-row: 2;
+    font-size: 20px;
+    height: 453px;
+    display: none;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.7);
+  }
+
+  .sign-up-container {
+    padding: 16px;
+  }
+
+    #sign-in-email, .sign-up-psw {
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      display: inline-block;
+      border: none;
+      background: #f1f1f1;
+    }
+
+    #sign-in-email:focus, .sign-up-psw:focus {
+      background-color: #ddd;
+      outline: none;
+    }
+    hr {
+      margin-top: 45px;
+      border: 1px solid #f1f1f1;
+      margin-bottom: 15px;
+    } 
+
+    .clearfix > button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      opacity: 0.9;
+    }
+
+    .clearfix > button:hover {
+      opacity:1;
+    }
+
+    .cancelbtn {
+      padding: 14px 20px;
+      background-color: #f44336;
+    }
+
+    .cancelbtn, .signupbtn {
+      float: left;
+      width: 50%;
+    }
+
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    @media screen and (max-width: 300px) {
+      .cancelbtn, .signupbtn {
+        width: 100%;
+      }
+    } 
+
+    #exit-sign-in {
+      cursor: pointer;
+      float: right;
+    }
+
+    #exit-sign-in:hover {
+      color: gray;
+    }
+
+    #login, #sign-up {
+      cursor: pointer;  
+      height: 35px;
+      text-align: center;
+      margin-left: 2%;
+      float: left;
+      width: 40%;
+      padding-top: 5px;
+    }
+
+    .sign-up-selecetor {
+      background-color: aqua;  
+    }
